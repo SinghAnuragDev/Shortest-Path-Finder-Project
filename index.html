@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortest Path Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Shortest Path Visualizer (Dijkstra & A*)</h1>
+
+  <div id="controls">
+    <button onclick="runDijkstra()">Run Dijkstra</button>
+    <button onclick="runAStar()">Run A*</button>
+    <button onclick="resetGrid()">Reset Grid</button>
+    <button onclick="setupDemo()">Setup Demo Walls</button>
+  </div>
+
+  <div id="legend">
+    <p><span class="legend-box start"></span> Start Node (Green)</p>
+    <p><span class="legend-box end"></span> End Node (Red)</p>
+    <p><span class="legend-box wall"></span> Wall (Black)</p>
+    <p><span class="legend-box visited"></span> Visited Nodes (Yellow)</p>
+    <p><span class="legend-box path"></span> Final Shortest Path (Orange)</p>
+    <p class="note">🤓 Fun fact: Notice how <b>A*</b> explores fewer yellow squares than Dijkstra!</p>
+  </div>
+
+  <div id="grid"></div>
+
+  <script src="graphAlgorithms.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

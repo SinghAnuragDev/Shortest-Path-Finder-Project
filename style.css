@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f9;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+#legend {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.legend-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border: 1px solid #000;
+}
+
+.legend-box.start {
+  background: green;
+}
+
+.legend-box.end {
+  background: red;
+}
+
+.legend-box.wall {
+  background: black;
+}
+
+.legend-box.visited {
+  background: yellow;
+}
+
+.legend-box.path {
+  background: orange;
+}
+
+.note {
+  margin-top: 10px;
+  font-style: italic;
+  color: #444;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(10, 35px);
+  justify-content: center;
+  gap: 3px;
+}
+
+.cell {
+  width: 35px;
+  height: 35px;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.cell.start {
+  background: green;
+}
+
+.cell.end {
+  background: red;
+}
+
+.cell.wall {
+  background: black;
+}
+
+.cell.visited {
+  background: yellow;
+}
+
+.cell.path {
+  background: orange;
+}
